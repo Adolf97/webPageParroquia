@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Montserrat:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  /*font-size: 14px;*/
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/*---------------Estilos Base-----------------*/
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+.container--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.column {
+  width: 100%;
+}
+
+/*---------------Estilos Header-----------------*/
+.main-header {
+  width: 100%;
+}
+.logo {
+  font-size: 1.25em;
+  color: #de423a/*#a34e10*/;
+  padding: 0.6em;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-weight: 100;
+}
+.location {
+  background: #de423a;
+  color: white;
+  margin: 0 auto;
+  padding: 0.4em 0.7em;
+  font-size: 0.9em;
+}
+.phone {
+  margin: 0;
+  padding: 0.4em 0.7em;
+  font-size: 0.9em;
+}
+.mail {
+  background: #de423a;
+  color: white;
+  margin: 0 auto;
+  padding: 0.4em 0.7em;
+  font-size: 0.9em;
+}
+.main-header [class*="icon-"]:before {
+  position: relative;
+  top: 0.12em;
+  right: 0.32em;
+}
+
+/*---------------Estilos del Menú-----------------*/
+.main-nav {
+  width: 100%;
+  position: relative;
+  z-index: 2000;
+  padding: 0.6em;
+}
+.icon-menu {
+  display: block;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 1.7em;
+}
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icon [class*="icon-"] {
+  color: black;
+  margin-left: 0.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  width: 2.17em;
+  height: 2.17em;
+  background: white;
+  border-radius: 50%;
+}
+.social-icon__link {
+  text-decoration: none;
+}
+.menu {
+  position: absolute;
+  top: 3.8em;
+  left: 0;
+  width: 100%;
+  background: black;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  
+  /*Animación de despliegue*/
+  height: 0;
+  overflow: hidden;
+  transition: height .3s linear;
+}
+.mostrar {
+  height: 185px;
+}
+.menu__link {
+  display: block;
+  padding: 0.8em;
+  color: white;
+  text-decoration: none;
+}
+.menu__link:hover {
+  background: #de423a;
+}
+.menu__link--select {
+  background: #de423a;
+}
+
+/*---------------Estilos del Banner-----------------*/
+.banner {
+  margin-top: -3.8em;
+  position: relative;
+}
+.banner:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  z-index: 1000;
+  top: 0;
+}
+.banner__img {
+  width: 100%;
+  height: 30em;
+  object-fit: cover;
+}
+.banner__content {
+  width: 90%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  z-index: 1500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*---------------Estilos Principales-----------------*/
+.group--color .container {
+  background: #de423a;
+  color: white;
+  padding: 0.6em;
+  text-align: center;
+}
+.main-title {
+  margin: 0.5em 0;
+  font-size: 1.5em;
+  font-family: 'Courgette', cursive;
+  font-weight: 100;
+}
+.main-txt {
+  font-size: 1em;
+  font-family: 'Courgette', cursive;
+  font-weight: 100;
+}
+.column__title {
+  font-size: 1.3em;
+}
+.main-about-description .column:nth-child(2) {
+  padding: 0.6em;
+}
+.main-about-description .column:nth-child(4) {
+  padding: 0.6em;
+}
+.main-about-description .column:nth-child(6) {
+  padding: 0.6em;
+}
+.btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 7.5em;
+  background: #de423a;
+  padding: 0.6em;
+  margin: 0.6em auto;
+  border-radius: 5px;
+  
+  /*Text*/
+  color: white;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+/*---------------Estilos del footer-----------------*/
+.main-footer {
+  background: #222222;
+  color: white;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: .6em;
+}
+.main-footer .container {
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+/*---------------Estilos Responsive-----------------*/
+/*---------------Estilos Responsive-----------------*/
+@media screen and (min-width: 430px) {
+  .logo {
+    color: white;
+    font-size: 1.2em;
+    text-align: left;
+  }
+  .info-container {
+    text-align: right;
+  }
+  .banner {
+    margin-top: -160px;
+    z-index: -1000;
+  }
+  .mail, .location {
+    background: none;
+    font-size: .75em;
+  }
+  .phone {
+    color: white;
+    font-size: .75em;
+  }
+  .column--50 {
+    width: 50%;
+  }
+  .column--50 img {
+    padding-left: 10px;
+  }
+  .main-nav {
+    background: rgba(0, 0, 0, 0.85);
+  }
+}
+
+/*---------------Estilos Responsive-----------------*/
+@media screen and (min-width: 720px) {
+  .logo {
+    font-size: 1.3em;
+    margin-top: -30px;
+  }
+  .mail, .location, .phone {
+    font-size: 1em;
+  }
+  .banner {
+    margin-top: -180px;
+  }
+  .banner__content {
+    font-size: 2em;
+  }
+  .main-title {
+    font-size: 1.7em;
+  }
+  .main-txt {
+    font-size: 1.1em;
+  }
+  .column--50 img {
+    padding: 10px 5px;
+    margin-top: 0;
+    border-radius: 10px;
+  }
+  .column__txt {
+    line-height: 35px;
+  }
+}
+
+/*---------------Estilos Responsive-----------------*/
+@media screen and (min-width: 1000px) {
+  .logo {
+    margin-top: 0;
+  }
+  .mail, .location, .phone {
+    font-size: 0.8em;
+  }
+  .banner {
+    margin-top: -155px;
+  }
+  .banner__content {
+    font-size: 2.3em;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .menu {
+    position: static;
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: 5px;
+  }
+  .column--30 {
+    width: 33%;
+  }
+  .column--30 img {
+    display: flex;
+    height: 300px;
+    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .inside-img {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .inside-img {
+    text-align: center;
+  }
+  .inside-img .column__txt {
+    line-height: 20px;
+  }
+  .inside-img__misas {
+    margin-left: 1.5%;
+  }
+  .inside-img__catequesis {
+    margin-left: 35%;
+  }
+  .inside-img__actividades {
+    margin-left: 68.5%;
+  }
+}
+
+/*---------------Estilos Responsive-----------------*/
+@media screen and (min-width: 1040px) {
+  .main-nav {
+    position: sticky;
+    top: 0px;
+  }
+  .column--30 img {
+    height: 400px;
+  }
+  .inside-img {
+    width: 20%;
+  }
+  .inside-img__misas {
+    margin-left: 6.5%;
+  }
+  .inside-img__catequesis {
+    margin-left: 40%;
+  }
+  .inside-img__actividades {
+    margin-left: 73.5%;
+  }
+}
