@@ -200,20 +200,13 @@ h1, h2, h3, h4, h5, h6 {
 .main-about-description .column:nth-child(6) {
   padding: 0.6em;
 }
-.btn {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  width: 7.5em;
-  background: #de423a;
-  padding: 0.6em;
-  margin: 0.6em auto;
-  border-radius: 5px;
-  
-  /*Text*/
-  color: white;
-  font-size: 0.8em;
-  font-weight: 600;
+.main-list_schedule {
+  margin-left: -30px;
+  margin-right: 20px;
+  line-height: 25px;
+}
+.main-list_schedule ul {
+  list-style: none;
 }
 
 /*---------------Estilos del footer-----------------*/
@@ -243,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
   }
   .banner {
-    margin-top: -160px;
+    margin-top: -210px;
     z-index: -1000;
   }
   .mail, .location {
@@ -254,11 +247,8 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-size: .75em;
   }
-  .column--50 {
-    width: 50%;
-  }
   .column--50 img {
-    padding-left: 10px;
+    display: none;
   }
   .main-nav {
     background: rgba(0, 0, 0, 0.85);
@@ -286,7 +276,11 @@ h1, h2, h3, h4, h5, h6 {
   .main-txt {
     font-size: 1.1em;
   }
+  .column--50 {
+    width: 50%;
+  }
   .column--50 img {
+    display: flex;
     padding: 10px 5px;
     margin-top: 0;
     border-radius: 10px;
@@ -320,37 +314,16 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
     padding: 5px;
   }
-  .column--30 {
-    width: 33%;
+  .column--40 {
+    margin: 30px;
+    width: 40%;
   }
-  .column--30 img {
-    display: flex;
-    height: 300px;
-    padding: 5px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  .column--50 .column__title {
+    font-size: 1.6em;
   }
-  .inside-img {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.8);
-    width: 30%;
-    height: auto;
-    border-radius: 5px;
-  }
-  .inside-img {
-    text-align: center;
-  }
-  .inside-img .column__txt {
-    line-height: 20px;
-  }
-  .inside-img__misas {
-    margin-left: 1.5%;
-  }
-  .inside-img__catequesis {
-    margin-left: 35%;
-  }
-  .inside-img__actividades {
-    margin-left: 68.5%;
+  .main-list {
+    font-size: 1.2em;
+    line-height: 30px;
   }
 }
 
@@ -359,20 +332,5 @@ h1, h2, h3, h4, h5, h6 {
   .main-nav {
     position: sticky;
     top: 0px;
-  }
-  .column--30 img {
-    height: 400px;
-  }
-  .inside-img {
-    width: 20%;
-  }
-  .inside-img__misas {
-    margin-left: 6.5%;
-  }
-  .inside-img__catequesis {
-    margin-left: 40%;
-  }
-  .inside-img__actividades {
-    margin-left: 73.5%;
   }
 }
