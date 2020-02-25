@@ -216,6 +216,9 @@ h1, h2, h3, h4, h5, h6 {
 .column__title {
   font-size: 1.3em;
 }
+.descargas {
+  padding: 0.6em;
+}
 .main-about-description .column:nth-child(2) {
   padding: 0.6em;
 }
