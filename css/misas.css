@@ -189,6 +189,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
   line-height: 25px;
 }
+#noneListStyle {
+  list-style: none;
+}
 .column__title {
   font-size: 1.3em;
 }
@@ -230,6 +233,14 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin: auto;
   margin-top: 15px;
+}
+.main-footer div .column {
+  margin-bottom: 10px;
+}
+.main-footer div .column p {
+  font-size: 1.43em;
+  line-height: 8px;
+  font-weight: 600;
 }
 
 /*---------------Estilos Responsive-----------------*/

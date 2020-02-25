@@ -223,6 +223,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   margin-top: 15px;
 }
+.main-footer div .column {
+  margin-bottom: 10px;
+}
+.main-footer div .column p {
+  font-size: 1.43em;
+  line-height: 8px;
+  font-weight: 600;
+}
 
 /*---------------Estilos Responsive-----------------*/
 /*---------------Estilos Responsive-----------------*/
