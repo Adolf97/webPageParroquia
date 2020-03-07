@@ -243,39 +243,54 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8em;
   font-weight: 600;
 }
-.btn_SoundCloud {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  width: 10.3em;
-  background: #ffad42;
-  padding: 1em;
-  margin: 0.6em auto;
-  border-radius: 5px;
-  
-  /*Text*/
-  color: white;
-  font-size: 0.8em;
-  font-weight: 600;
-  text-transform: uppercase;
+/*---------------Parte de Formación de Agentes Pastorales--------------*/
+.container_formacion {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.4em;
 }
-.btn_Youtube {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  width: 10.3em;
-  background: #ff1717;
-  padding: 1em;
-  margin: 0.6em auto;
-  border-radius: 5px;
-  
-  /*Text*/
-  color: white;
-  font-size: 0.8em;
-  font-weight: 600;
-  text-transform: uppercase;
+.container_formacion_img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5em;
 }
-
+.container_formacion_img img {
+  position: relative;
+  width: 100%;
+  height: 14.37em;
+}
+.container_formacion_btn {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.container_formacion_btn audio {
+  position: relative;
+  display: block;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 0.3em;
+  border-radius: 3px;
+}
+.btn_youtube {
+  /*Afuera*/
+  position: relative;
+  display: block;
+  width: 75%;
+  padding: 0.8em; 
+  background: #ff1a1a;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 4px;
+  /*Adentro*/
+  text-decoration: none;
+  text-align: center;
+  font-size: 1em;
+  color: #eee;
+  font-weight: 600;
+}
 /*---------------Estilos del footer-----------------*/
 .main-footer {
   background: #222222;
@@ -345,6 +360,14 @@ h1, h2, h3, h4, h5, h6 {
   .main-nav {
     background: rgba(0, 0, 0, 0.85);
   }
+  .container_formacion {
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .container_formacion_img img {
+    height: 16em;
+  }
 }
 
 /*---------------Estilos Responsive-----------------*/
@@ -375,6 +398,17 @@ h1, h2, h3, h4, h5, h6 {
   }
   .column__txt {
     line-height: 35px;
+  }
+  .container_formacion {
+    width: 50%;
+    left: 0%;
+    transform: translate(0, 0);
+  }
+  .container_formacion_img img {
+    width: 90%;
+    height: 16em;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
 
@@ -449,38 +483,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  .inside-img-formacion {
-    position: absolute;
-    width: auto;
-    height: auto;
+  .container_formacion {
+    width: 33%;
   }
-  #video7 {
-    margin-top: -4em;
-    margin-left: 2%;
-  }
-  #video6 {
-    margin-top: -4em;
-    margin-left: 27%;
-  }
-  #video5 {
-    margin-top: -4em;
-    margin-left: 52%;
-  }
-  #video4 {
-    margin-top: -4em;
-    margin-left: 78%;
-  }
-  #video3 {
-    margin-top: 38em;
-    margin-left: 3%;
-  }
-  #video2 {
-    margin-top: 38em;
-    margin-left: 40%;
-  }
-  #video1 {
-    margin-top: 38em;
-    margin-left: 78%;
+  .container_formacion_img img {
+    height: 14em;
   }
 }
 
@@ -519,5 +526,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   .inside-img__actividades {
     margin-left: 73.5%;
+  }
+  .container_formacion {
+    width: 25%;
+  }
+  .container_formacion_img img {
+    height: 14em;
   }
 }
