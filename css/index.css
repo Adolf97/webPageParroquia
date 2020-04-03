@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   width: 100%;
   margin: auto;
+  vertical-align: top;
 }
 .container--flex {
   display: flex;
@@ -363,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
   .container_formacion {
     width: 80%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
   }
   .container_formacion_img img {
     height: 16em;
@@ -438,9 +439,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   .column-aviso {
     position: relative;
-    width: 55%;
+    width: 85%;
     left: 50%;
     transform: translate(-50%, 0);
+    
+    font-size: 1.3em;
+    text-align: justify;
   }
   .column--30 {
     width: 33%;
